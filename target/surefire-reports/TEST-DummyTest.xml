@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DummyTest" time="0.004" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="DummyTest" time="0.001" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -57,10 +57,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase name="test" classname="DummyTest" time="0.004">
-    <failure message="Test intentionaly failing" type="java.lang.AssertionError">java.lang.AssertionError: Test intentionaly failing
-	at org.junit.Assert.fail(Assert.java:88)
-	at DummyTest.test(DummyTest.java:6)
-</failure>
-  </testcase>
+  <testcase name="test" classname="DummyTest" time="0.001"/>
 </testsuite>
