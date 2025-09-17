@@ -32,8 +32,8 @@ sh ' mvn clean verify sonar:sonar   -Dsonar.projectKey=HelloWorldTest  -Dsonar.p
                 )]) {
                     sh """
                     curl -v -u $NEXUS_USER:$NEXUS_PASS \
-                    --upload-file /var/lib/jenkins/workspace/IntegrationTest/target/HelloWorld-0.0.1.jar \
-                    http://localhost:8081/repository/maven-releases2/com/example/HelloWorld/0.0.1/HelloWorld-0.0.1.jar
+                    --upload-file /var/lib/jenkins/workspace/IntegrationTest/target/HelloWorld-0.0.2.jar \
+                    http://localhost:8081/repository/maven-releases2/com/example/HelloWorld/0.0.1/HelloWorld-0.0.2.jar
                     """
                 }
             }
